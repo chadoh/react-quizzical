@@ -149,7 +149,7 @@ Basic example:
 More about each attribute:
 
 * `"ask"` - **required** - the question to ask
-* `"set"` - **required** - every free-form field must set a single variable. When the user types in their answer to the question, their answer will be stored in this variable. It can then be used in follow-up question's `"ask"` field or in Event Templates. Read more about the templating system below.
+* `"set"` - **required** - every free-form field must set a single variable. When the user types in their answer to the question, their answer will be stored in this variable. It can then be used in follow-up question's `"ask"` field or in the `template`. Read more about the templating system below.
 * `"type"` - Either leave this blank for a text field, or set it to `"DATE"` for a date field
 * `"then"` - The next field to show. Can be omitted to end the questioning after the user answers this one. Can be another free-form field. Or it can be a multiple choice field.
 
@@ -194,7 +194,7 @@ In the Question Set (see above), you can set a variable like this:
       "set": "color"
     }
 
-This will display a text box, and when the user fills it in, their answer will be set to the variable `color`, which can then be used later in the Question Set or in the Event Template like this:
+This will display a text box, and when the user fills it in, their answer will be set to the variable `color`, which can then be used later in the `questions` or in the `template` like this:
 
     {
       "ask": "What do you think liking {{color}} says about you to other people?",
