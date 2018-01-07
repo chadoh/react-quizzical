@@ -17,6 +17,8 @@ react-quizzical
 
 A react component for asking a tree of questions. See [an interactive demo][demo].
 
+  [demo]: http://chadoh.com/react-quizzical/
+
 * [Overview][overview]
 * [Getting Started][gettingStarted]
 * [Basic Props][basicProps]

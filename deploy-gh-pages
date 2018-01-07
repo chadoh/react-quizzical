@@ -1,0 +1,13 @@
+#!/bin/bash
+
+git add -f ./demo/dist
+treeObjId=`git write-tree --prefix=demo/dist`
+git reset -q -- ./demo/dist
+
+commitId=`git commit-tree -p gh-pages -m "update gh-pages" $treeObjId`
+
+git update-ref refs/heads/gh-pages $commitId
+
+git push -q origin gh-pages:gh-pages
+
+echo "Pushed freshly-built demo to gh-pages"
