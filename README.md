@@ -147,8 +147,8 @@ Basic example:
 More about each attribute:
 
 * `"ask"` - **required** - the question to ask
-* `"set"` - **required** - every free-form field must set a single variable. When the user types in their answer to the question, their answer will be stored in this variable. It can then be used in follow-up question's "ask" field or in Event Templates. Read more about the templating system below.
-* `"type"` - Either leave this blank for a text field, or set it to "DATE" for a date field
+* `"set"` - **required** - every free-form field must set a single variable. When the user types in their answer to the question, their answer will be stored in this variable. It can then be used in follow-up question's `"ask"` field or in Event Templates. Read more about the templating system below.
+* `"type"` - Either leave this blank for a text field, or set it to `"DATE"` for a date field
 * `"then"` - The next field to show. Can be omitted to end the questioning after the user answers this one. Can be another free-form field. Or it can be a multiple choice field.
 
 
