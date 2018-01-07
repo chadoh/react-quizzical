@@ -1,7 +1,7 @@
 {
   "name": "react-quizzical",
   "version": "1.0.3",
-  "description": "react-quizzical React component",
+  "description": "React component for asking a user a tree of questions",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -29,10 +29,10 @@
     "react-ace": "^5.9.0",
     "react-dom": "^16.2.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Chad Ostrowski <hi@chadoh.com> (https://chadoh.com)",
+  "homepage": "https://github.com/chadoh/react-quizzical",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/chadoh/react-quizzical",
   "keywords": [
     "react-component"
   ]
