@@ -6,14 +6,14 @@ react-quizzical
 [![Coveralls][coveralls-badge]][coveralls]
 
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+  [build-badge]: https://img.shields.io/travis/chadoh/react-quizzical/master.png?style=flat-square
+  [build]: https://travis-ci.org/chadoh/react-quizzical
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+  [npm-badge]: https://img.shields.io/npm/v/react-quizzical.png?style=flat-square
+  [npm]: https://www.npmjs.org/package/react-quizzical
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+  [coveralls-badge]: https://img.shields.io/coveralls/chadoh/react-quizzical/master.png?style=flat-square
+  [coveralls]: https://coveralls.io/github/chadoh/react-quizzical
 
 A react component for asking a tree of questions. See [an interactive demo][demo].
 
@@ -39,6 +39,8 @@ Overview
 appears, Do you love JavaScript? User goes back and clicks Yes on the first
 question, and a different second question appears, What do you love about it?
 This new question has a text field below.][screenshot]
+
+  [screenshot]: /src/QuestionSet/QuestionSet-demo.gif
 
 To accomplish the above, here's the code you could write:
 
