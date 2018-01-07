@@ -42,7 +42,7 @@ appears, Do you love JavaScript? User goes back and clicks Yes on the first
 question, and a different second question appears, What do you love about it?
 This new question has a text field below.][screenshot]
 
-  [screenshot]: /src/QuestionSet/QuestionSet-demo.gif
+  [screenshot]: https://github.com/chadoh/react-quizzical/blob/master/src/QuestionSet/QuestionSet-demo.gif
 
 To accomplish the above, here's the code you could write:
 
