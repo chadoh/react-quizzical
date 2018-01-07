@@ -19,13 +19,13 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "prop-types": "^15.6.0"
   },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
     "nwb": "0.21.x",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-ace": "^5.9.0",
     "react-dom": "^16.2.0"
