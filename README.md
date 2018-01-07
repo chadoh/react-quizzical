@@ -15,9 +15,10 @@ react-quizzical
   [coveralls-badge]: https://img.shields.io/coveralls/chadoh/react-quizzical/master.png?style=flat-square
   [coveralls]: https://coveralls.io/github/chadoh/react-quizzical
 
-A react component for asking a tree of questions. See [an interactive demo][demo].
+A react component for asking a tree of questions. [Play with an interactive demo][demo] and [read an intro][intro].
 
   [demo]: http://chadoh.com/react-quizzical/
+  [intro]: https://medium.com/@chadoh/toward-a-more-engaging-way-to-ask-questions-bd402e0ae15b
 
 * [Overview][overview]
 * [Getting Started][gettingStarted]
