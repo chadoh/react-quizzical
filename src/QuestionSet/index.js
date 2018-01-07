@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
+import * as DefaultComponents from './DefaultComponents';
+
 const SECTION_PATTERN = new RegExp(/{{#(\w+)}}(.+?){{\/\1}}/g);
 const INVERTED_SECTION_PATTERN = new RegExp(/{{\^(\w+)}}(.+?){{\/\1}}/g);
 const SUBSTITUTION_PATTERN = new RegExp(/{{([^}]+)}}/g);
@@ -18,50 +20,6 @@ const keepIfTruthy = answers => (_, maybe, toKeep) =>
 
 const keepIfFalsey = answers => (_, maybe, toKeep) =>
   answers[maybe] ? '' : toKeep;
-
-const DefaultSkipLinkComponent = () => {
-  console.error(new Error(
-    'You had showSkipLink={true} for a QuestionSet, but did not provide a' +
-    'skipLinkComponent. Please provide a skipLinkComponent.'
-  ));
-  return <div>Next Question</div>;
-};
-
-const DefaultSaveButton = () => (
-  <input type="submit" value="Save" />
-);
-
-const DefaultDateComponent = props => (
-  <input type="date" {...props} />
-);
-
-const DefaultFreeFormFieldComponent = ({name, label, children}) => (
-  <p>
-    <label htmlFor={name}>{label}</label>
-    {children}
-  </p>
-);
-
-const DefaultMultipleChoiceFieldComponent = ({label, children}) => (
-  <div>
-    <p>{label}</p>
-    <p>{children}</p>
-  </div>
-);
-
-
-const DefaultChoiceComponent = ({questionNumber, choiceNumber, onChange, checked, text}) => (
-  <label>
-    <input
-      type="radio"
-      name={questionNumber}
-      value={choiceNumber}
-      onChange={onChange}
-      checked={checked}
-    />
-    {text}
-  </label>
-);
 
 export default class Question extends Component {
   static propTypes = {
@@ -84,14 +42,14 @@ export default class Question extends Component {
     onSave: (...args) => console.log(...args),
 
     showSkipOnFirst: false,
-    skipLinkComponent: DefaultSkipLinkComponent,
-    saveButton: DefaultSaveButton,
+    skipLinkComponent: DefaultComponents.SkipLink,
+    saveButton: DefaultComponents.SaveButton,
 
-    dateInputComponent: DefaultDateComponent,
+    dateInputComponent: DefaultComponents.Date,
     textInputComponent: 'input',
-    freeFormFieldComponent: DefaultFreeFormFieldComponent,
-    multipleChoiceFieldComponent: DefaultMultipleChoiceFieldComponent,
-    choiceComponent: DefaultChoiceComponent,
+    freeFormFieldComponent: DefaultComponents.FreeFormField,
+    multipleChoiceFieldComponent: DefaultComponents.MultipleChoiceField,
+    choiceComponent: DefaultComponents.Choice,
   }
 
   state = {
