@@ -266,4 +266,4 @@ prop | type | default | description
 `multipleChoiceFieldComponent` | React Component | [See defaults][componentDefaults] | When a multiple choice field is encountered, this component will be displayed. It will be passed a `label`, and `children` prop.
 `choiceComponent` | React Component | [See defaults][componentDefaults] | This is the component used to display each choice within a multiple choice field. Basically a radio input. It will be passed `questionNumber`, `choiceNumber`, `onChange`, `checked`, and `text` props.
 
-  [componentDefaults]: /src/QuestionSet/DefaultComponents.js
+  [componentDefaults]: https://github.com/chadoh/react-quizzical/blob/master/src/QuestionSet/DefaultComponents.js
